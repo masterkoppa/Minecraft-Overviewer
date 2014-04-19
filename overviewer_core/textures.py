@@ -4270,3 +4270,27 @@ def flower(self, blockid, data):
         alpha_over(img, bloom_tex.resize((14, 11), Image.ANTIALIAS), (5,5))
 
     return img
+####################################################
+#              Start Custom Blocks
+####################################################
+
+# Chisel
+# Cobblestone
+@material(blockid=211, data=range(7), solid=True)
+def aligned_cobblestone_block(self, blockid, data):
+    
+    if data == 0:
+        top = self.load_image_texture("assets/chisel/textures/blocks/cobblestone/terrain-cobb-brickaligned.png")
+    elif data == 1:
+        top = self.load_image_texture("assets/chisel/textures/blocks/cobblestone/terrain-cobblargetiledark.png")
+    elif data == 2:
+        top = self.load_image_texture("assets/chisel/textures/blocks/cobblestone/terrain-cobbsmalltile.png")
+    elif data == 3:
+        top = self.load_image_texture("assets/chisel/textures/blocks/cobblestone/terrain-cob-detailedbrick.png")
+    elif data == 4:
+        top = self.load_image_texture("assets/chisel/textures/blocks/cobblestone/terrain-cob-french.png")
+    elif data == 5:
+        top = self.load_image_texture("assets/chisel/textures/blocks/cobblestone/terrain-cob-french2.png")
+    else:
+        top = self.load_image_texture("assets/chisel/textures/blocks/cobblestone/terrain-cobmoss-creepdungeon.png")
+    return self.build_block(top, top)
