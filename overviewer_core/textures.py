@@ -4280,17 +4280,19 @@ def flower(self, blockid, data):
 def aligned_cobblestone_block(self, blockid, data):
     
     if data == 0:
-        top = self.load_image_texture("assets/chisel/textures/blocks/cobblestone/terrain-cobb-brickaligned.png")
+        top = self.load_image_texture("assets/minecraft/textures/blocks/cobblestone/terrain-cobb-brickaligned.png")
     elif data == 1:
-        top = self.load_image_texture("assets/chisel/textures/blocks/cobblestone/terrain-cobblargetiledark.png")
+        top = self.load_image_texture("assets/minecraft/textures/blocks/cobblestone/terrain-cobblargetiledark.png")
     elif data == 2:
-        top = self.load_image_texture("assets/chisel/textures/blocks/cobblestone/terrain-cobbsmalltile.png")
+        top = self.load_image_texture("assets/minecraft/textures/blocks/cobblestone/terrain-cobbsmalltile.png")
     elif data == 3:
-        top = self.load_image_texture("assets/chisel/textures/blocks/cobblestone/terrain-cob-detailedbrick.png")
+        top = self.load_image_texture("assets/minecraft/textures/blocks/cobblestone/terrain-cob-detailedbrick.png")
     elif data == 4:
-        top = self.load_image_texture("assets/chisel/textures/blocks/cobblestone/terrain-cob-french.png")
+        top = self.load_image_texture("assets/minecraft/textures/blocks/cobblestone/terrain-cob-french.png")
     elif data == 5:
-        top = self.load_image_texture("assets/chisel/textures/blocks/cobblestone/terrain-cob-french2.png")
+        top = self.load_image_texture("assets/minecraft/textures/blocks/cobblestone/terrain-cob-french2.png")
     else:
-        top = self.load_image_texture("assets/chisel/textures/blocks/cobblestone/terrain-cobmoss-creepdungeon.png")
+        top = self.load_image_texture("assets/minecraft/textures/blocks/cobblestone/terrain-cobmoss-creepdungeon.png")
     return self.build_block(top, top)
+
+
