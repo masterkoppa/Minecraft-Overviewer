@@ -4278,6 +4278,7 @@ def flower(self, blockid, data):
 # Cobblestone
 @material(blockid=211, data=range(7), solid=True)
 def aligned_cobblestone_block(self, blockid, data):
+    print "Hit this"
     
     if data == 0:
         top = self.load_image_texture("assets/minecraft/textures/blocks/cobblestone/terrain-cobb-brickaligned.png")
