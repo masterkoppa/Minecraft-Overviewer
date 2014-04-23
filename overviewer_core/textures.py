@@ -4294,4 +4294,7 @@ def aligned_cobblestone_block(self, blockid, data):
         top = self.load_image_texture("assets/minecraft/textures/blocks/cobblestone/terrain-cobmoss-creepdungeon.png")
     return self.build_block(top, top)
 
+# Cobble glowstone
+block(blockid=211, data=9, top_image="assets/minecraft/textures/blocks/lightstone/terrain-sulphur-weavelanternlight.png")
+
 
