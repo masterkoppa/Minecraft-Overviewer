@@ -282,9 +282,7 @@ class TileSet(object):
         self.am = assetmanagerobj
         self.textures = texturesobj
         self.outputdir = os.path.abspath(outputdir)
-		
-		logging.warning(textures)
-		logging.warning(textures.__dict__)
+
 
         config = self.am.get_tileset_config(self.options.get("name"))
         self.config = config
