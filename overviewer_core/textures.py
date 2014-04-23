@@ -4292,8 +4292,8 @@ def aligned_cobblestone_block(self, blockid, data):
         top = self.load_image_texture("assets/minecraft/textures/blocks/cobblestone/terrain-cob-french2.png")
     elif data == 7:
         top = self.load_image_texture("assets/minecraft/textures/blocks/cobblestone/terrain-cobmoss-creepdungeon.png")
-	elif data == 8:
-		top = self.load_image_texture("assets/minecraft/textures/blocks/cobblestone/terrain-mossysmalltiledark.png")
+    elif data == 8:
+        top = self.load_image_texture("assets/minecraft/textures/blocks/cobblestone/terrain-mossysmalltiledark.png")
     return self.build_block(top, top)
 
 # Cobble glowstone
