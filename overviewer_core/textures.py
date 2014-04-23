@@ -430,7 +430,7 @@ class Textures(object):
             self.foliagecolor = list(self.load_image("foliage.png").getdata())
         return self.foliagecolor
 
-	#I guess "watercolor" is wrong. But I can't correct as my texture pack don't define water color.
+    #I guess "watercolor" is wrong. But I can't correct as my texture pack don't define water color.
     def load_water_color(self):
         """Helper function to load the water color texture."""
         if not hasattr(self, "watercolor"):
@@ -4300,3 +4300,24 @@ def aligned_cobblestone_block(self, blockid, data):
 block(blockid=221, data=9, top_image="assets/minecraft/textures/blocks/lightstone/terrain-sulphur-weavelanternlight.png")
 
 
+@material(blockid=240, data=range(16), solid=True)
+def aligned_cobblestone_block(self, blockid, data):    
+    if data == 0:
+        top = self.load_image_texture("assets/minecraft/textures/blocks/planks-spruce/blinds.png")
+    elif data == 1:
+        top = self.load_image_texture("assets/minecraft/textures/blocks/planks-spruce/chaotic.png")
+    elif data == 2:
+        top = self.load_image_texture("assets/minecraft/textures/blocks/planks-spruce/blinds.png")
+    elif data == 3:
+        top = self.load_image_texture("assets/minecraft/textures/blocks/planks-spruce/blinds.png")
+    elif data == 4:
+        top = self.load_image_texture("assets/minecraft/textures/blocks/planks-spruce/blinds.png")
+    elif data == 5:
+        top = self.load_image_texture("assets/minecraft/textures/blocks/planks-spruce/fancy.png")
+    elif data == 7:
+        top = self.load_image_texture("assets/minecraft/textures/blocks/planks-spruce/fancy.png")
+    elif data == 8:
+        top = self.load_image_texture("assets/minecraft/textures/blocks/planks-spruce/fancy.png")
+    else:
+        top = self.load_image_texture("assets/minecraft/textures/blocks/planks-spruce/fancy.png")
+    return self.build_block(top, top)
