@@ -3712,7 +3712,7 @@ block(blockid=122, top_image="assets/minecraft/textures/blocks/dragon_egg.png")
 block(blockid=123, top_image="assets/minecraft/textures/blocks/redstone_lamp_off.png")
 
 # active redstone lamp
-block(blockid=124, top_image="assets/minecraft/textures/blocks/redstone_lamp_on.png")
+block(blockid=[124,221], top_image="assets/minecraft/textures/blocks/redstone_lamp_on.png")
 
 # daylight sensor.  
 @material(blockid=151, transparent=True)
@@ -4297,7 +4297,7 @@ def aligned_cobblestone_block(self, blockid, data):
     return self.build_block(top, top)
 
 # Cobble glowstone
-block(blockid=221, data=9, top_image="assets/minecraft/textures/blocks/lightstone/terrain-sulphur-weavelanternlight.png")
+#block(blockid=221, data=9, top_image="assets/minecraft/textures/blocks/lightstone/terrain-sulphur-weavelanternlight.png")
 
 
 @material(blockid=240, data=range(16), solid=True)
