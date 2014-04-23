@@ -4288,13 +4288,15 @@ def aligned_cobblestone_block(self, blockid, data):
         top = self.load_image_texture("assets/minecraft/textures/blocks/cobblestone/terrain-cob-detailedbrick.png")
     elif data == 4:
         top = self.load_image_texture("assets/minecraft/textures/blocks/cobblestone/terrain-cob-french.png")
-    elif data == 5:
+    elif data == 5 or data == 6:
         top = self.load_image_texture("assets/minecraft/textures/blocks/cobblestone/terrain-cob-french2.png")
-    else:
+    elif data == 7:
         top = self.load_image_texture("assets/minecraft/textures/blocks/cobblestone/terrain-cobmoss-creepdungeon.png")
+	elif data == 8:
+		top = self.load_image_texture("assets/minecraft/textures/blocks/cobblestone/terrain-mossysmalltiledark.png")
     return self.build_block(top, top)
 
 # Cobble glowstone
-block(blockid=211, data=9, top_image="assets/minecraft/textures/blocks/lightstone/terrain-sulphur-weavelanternlight.png")
+block(blockid=221, data=9, top_image="assets/minecraft/textures/blocks/lightstone/terrain-sulphur-weavelanternlight.png")
 
 
